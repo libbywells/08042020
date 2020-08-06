@@ -46,8 +46,9 @@ nav ul li a:hover {
 
 header {
   background-image: url("https://placehold.it/600");
-  height: 300px;
+  height: 200px;
 
+  position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,5 +60,82 @@ header h1 {
 }
 
 header h2 {
-    display: none;
+  display: none;
+}
+
+.header-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 30px 30px 0;
+}
+
+main {
+  border: 2px solid #aaa;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 5px 10px 12px #393939;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+  width: 24em;
+  border: 2px solid pink;
+  box-shadow: 5px 10px 12px #393939;
+  margin: 10px;
+}
+
+.img-wrapper {
+  width: 20em;
+  margin: 0 auto;
+}
+
+.img-wrapper img {
+  display: block;
+  max-width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  padding: 20px;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background: linear-gradient(to bottom, #f9f9f9be, #0a0a0a);
+  color: #fff;
+  font-weight: 600;
+  transition: all 200ms ease-in-out;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.icon {
+  padding: 5px;
+  font-size: 1.6em;
+}
+
+.icon:hover {
+  color: lemonchiffon;
+  cursor: pointer;
+}
+
+.social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+}
+
+.social ul a {
+  text-decoration: none;
 }
